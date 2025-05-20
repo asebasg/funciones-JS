@@ -84,4 +84,15 @@ function factorial(num) {
 }
 
 console.log(factorial(4)); // 24
+//-------------------------------------------------------------
+// Calcula el promedio de todos los números recibidos usando rest parameters y reduce
+function promedio(...numeros) {
+    if (numeros.length === 0) return 0; // Evita división por cero
+    const suma = numeros.reduce((total, num) => total + num, 0);
+    return suma / numeros.length;
+}
 
+console.log(promedio(10, 20, 30)); // 20
+console.log(promedio(5, 15));      // 10
+console.log(promedio());           // 0
+// filepath: c:\Users\juang\OneDrive\Escritorio\funciones\funciones-JS\src\juanes.js
