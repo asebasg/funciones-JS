@@ -1,3 +1,7 @@
+/**
+ * Ejercicios basicos
+ */
+
 // 1. Saludo simple.
 function saludoSimple(nombre) {
   return `Hola, ${nombre}, ¿cómo te va?`;
@@ -36,6 +40,11 @@ function saludoPorDefecto(nombre) {
 function mensaje() {
   return `Hola, este es un simple mensaje...`;
 }
+
+// 7. IIFE simple
+(function () {
+  console.log("¡Soy una IIFE!");
+})();
 
 // Aqui se llaman las funciones
 console.log(saludoSimple("Sebastian")); // 1
